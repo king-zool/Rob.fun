@@ -16,6 +16,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { getTrendingTokens, mockTokens } from '@/lib/mockData';
 
 export default function Home() {
+
   const [, setLocation] = useLocation();
   const trendingTokens = getTrendingTokens(6);
 

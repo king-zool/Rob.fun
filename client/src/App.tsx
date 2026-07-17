@@ -11,8 +11,8 @@ import Leaderboard from "./pages/Leaderboard";
 import Launch from "./pages/Launch";
 import Dashboard from "./pages/Dashboard";
 import TokenDetails from "./pages/TokenDetails";
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path="/" component={Home} />
