@@ -1,0 +1,17 @@
+import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { sepolia, mainnet } from 'wagmi/chains';
+
+export const wagmiConfig = getDefaultConfig({
+  appName: 'Rob.fun',
+  projectId: 'robfun-phase2-mvp',
+  chains: [sepolia, mainnet],
+  ssr: false,
+});
+
+export const TESTNET_CHAIN_ID = sepolia.id;
+export const TESTNET_RPC_URL = 'https://sepolia.infura.io/v3/YOUR_INFURA_KEY';
+
+export const CONTRACT_ADDRESSES = {
+  tokenFactory: import.meta.env.VITE_TOKEN_FACTORY_ADDRESS || '',
+  bondingCurve: import.meta.env.VITE_BONDING_CURVE_ADDRESS || '',
+};

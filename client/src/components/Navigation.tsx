@@ -5,9 +5,10 @@
 
 import { useState } from 'react';
 import { useLocation } from 'wouter';
-import { Menu, X, Wallet } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
+import { WalletConnectButton } from './WalletConnectButton';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -64,14 +65,7 @@ export function Navigation() {
                 Dashboard
               </Button>
             </a>
-            <Button
-              size="sm"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground btn-glow gap-2"
-              onClick={() => alert('Wallet connection coming in Phase 2')}
-            >
-              <Wallet size={16} />
-              <span className="hidden sm:inline">Connect Wallet</span>
-            </Button>
+            <WalletConnectButton />
 
             {/* Mobile Menu Button */}
             <button
