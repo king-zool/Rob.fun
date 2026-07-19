@@ -15,5 +15,5 @@ export const TESTNET_RPC_URL = 'https://sepolia.infura.io/v3/YOUR_INFURA_KEY';
 // Contract addresses (will be set after deployment)
 export const CONTRACT_ADDRESSES = {
   tokenFactory: import.meta.env.VITE_TOKEN_FACTORY_ADDRESS || '',
-  import.meta.env.VITE_BONDING_CURVE_ADDRESS || '',
+  bondingCurve: import.meta.env.VITE_BONDING_CURVE_ADDRESS || '',
 };
