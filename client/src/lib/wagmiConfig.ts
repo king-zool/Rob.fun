@@ -1,6 +1,6 @@
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import { sepolia, mainnet } from 'wagmi/chains';
-
+console.log("Wagmi config loaded");
 export const wagmiConfig = getDefaultConfig({
   appName: 'Rob.fun',
   projectId: import.meta.env.VITE_WALLETCONNECT_PROJECT_ID,
@@ -15,4 +15,4 @@ export const CONTRACT_ADDRESSES = {
   tokenFactory: import.meta.env.VITE_TOKEN_FACTORY_ADDRESS || '',
   bondingCurve: import.meta.env.VITE_BONDING_CURVE_ADDRESS || '',
 };
-console.log("Wagmi config loaded");
+
