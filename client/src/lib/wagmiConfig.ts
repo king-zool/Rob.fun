@@ -15,3 +15,4 @@ export const CONTRACT_ADDRESSES = {
   tokenFactory: import.meta.env.VITE_TOKEN_FACTORY_ADDRESS || '',
   bondingCurve: import.meta.env.VITE_BONDING_CURVE_ADDRESS || '',
 };
+console.log("Wagmi config loaded");
