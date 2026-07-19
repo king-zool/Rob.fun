@@ -8,6 +8,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 const queryClient = new QueryClient();
 
 export function WagmiProviderWrapper({ children }: { children: React.ReactNode }) {
+  console.log(wagmiConfig);
   return (
     <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>
