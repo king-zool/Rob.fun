@@ -3,7 +3,7 @@ import { sepolia, mainnet } from 'wagmi/chains';
 
 export const wagmiConfig = getDefaultConfig({
   appName: 'Rob.fun',
-  projectId: 'robfun-phase2-mvp',
+  projectId: import.meta.env.VITE_WALLETCONNECT_PROJECT_ID,
   chains: [sepolia, mainnet],
   ssr: false,
 });
